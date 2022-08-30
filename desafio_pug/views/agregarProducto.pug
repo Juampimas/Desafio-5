@@ -1,0 +1,17 @@
+include ./partials/nav.pug
+
+h2 Agregar Productos
+
+form(action="/productos", method="post") 
+    div 
+        label Nombre 
+        input(type="text", name="title")
+    div 
+        label Precio 
+        input(type="text", name="price")
+    div 
+        label Foto 
+        input(type="text", name="img").
+
+    input(type="submit")
+    

@@ -1,0 +1,25 @@
+include ./partials/nav.pug
+
+h2 Lista de Productos
+
+table 
+    thead 
+        tr 
+            th Id 
+            th Nombre
+            th Precio
+            th Foto
+
+    tbody
+        each p in productos
+            tr 
+                td 
+                    = p.id 
+                td 
+                    = p.title 
+                td 
+                    = p.price 
+                td 
+                    a(href="/productos/detalle/"+p.id) 
+                        img(src=p.img, width="250px")
+    

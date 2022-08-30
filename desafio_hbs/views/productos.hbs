@@ -1,0 +1,27 @@
+<h2>Lista de productos</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Foto</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each productos}}
+            <tr>
+                <td> {{id}} </td>
+                <td> {{title}} </td>
+                <td> {{price}} </td>
+                <td> <a href="/productos/detalle/{{id}}"> <img width="250px" src={{img}}></a></td>
+            </tr>
+        {{/each}}    
+    </tbody>
+</table>
+
+<a href="/productos/agregarProductos">
+   <button>Agregar Productos</button>
+</a>
+
